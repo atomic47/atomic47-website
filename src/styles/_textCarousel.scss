@@ -1,0 +1,197 @@
+.text-carousel{
+   display:flex;
+   flex-direction: row;
+   justify-content: center;
+   margin-top: 15%;
+   margin-bottom: 15%;
+}
+
+.first-word{
+    margin-right: 8px;
+    color: black;
+    font-weight: 300 !important;
+}
+
+.changing-word-1{
+    text-decoration: underline;
+    text-decoration-style: dashed;
+    text-decoration-color: black;
+    position: relative;
+    font-family:'Roboto Mono', monospace !important;
+    font-weight: 700 !important;
+}
+
+
+.changing-word-1::before,
+.changing-word-1::after{
+    content: '';
+    position:absolute;
+    top:0;
+    right:0;
+    bottom: 0;
+    left: 0;
+}
+
+.changing-word-1::before{
+    background:white;
+    animation: typewriter 2s steps(10) 1s forwards
+}
+.changing-word-1::after{
+    background:black;
+    width: 0.125em;
+    animation: typewriter 2s steps(10) 1s forwards,
+    blink 500ms steps(10) infinite
+}
+
+
+
+.changing-word-2{
+    text-decoration: underline;
+    text-decoration-style: dashed;
+    text-decoration-color: black;
+    position: relative;
+    font-family:'Roboto Mono', monospace !important;
+    font-weight: 700 !important;
+}
+
+
+.changing-word-2::before,
+.changing-word-2::after{
+    content: '';
+    position:absolute;
+    top:0;
+    right:0;
+    bottom: 0;
+    left: 0;
+}
+
+.changing-word-2::before{
+    background:white;
+    animation: typewriter 2s steps(9) 1s forwards
+}
+.changing-word-2::after{
+    background:black;
+    width: 0.125em;
+    animation: typewriter 2s steps(9) 1s forwards,
+    blink 500ms steps(9) infinite
+}
+
+
+.changing-word-3{
+    text-decoration: underline;
+    text-decoration-style: dashed;
+    text-decoration-color: black;
+    position: relative;
+    font-family:'Roboto Mono', monospace !important;
+    font-weight: 700 !important;
+}
+
+
+.changing-word-3::before,
+.changing-word-3::after{
+    content: '';
+    position:absolute;
+    top:0;
+    right:0;
+    bottom: 0;
+    left: 0;
+}
+
+.changing-word-3::before{
+    background:white;
+    animation: typewriter 2s steps(6) 1s forwards
+}
+.changing-word-3::after{
+    background:black;
+    width: 0.125em;
+    animation: typewriter 2s steps(6) 1s forwards,
+    blink 500ms steps(6) infinite
+}
+
+.changing-word-4{
+    text-decoration: underline;
+    text-decoration-style: dashed;
+    text-decoration-color: black;
+    position: relative;
+    font-family:'Roboto Mono', monospace !important;
+    font-weight: 700 !important;
+}
+
+
+.changing-word-4::before,
+.changing-word-4::after{
+    content: '';
+    position:absolute;
+    top:0;
+    right:0;
+    bottom: 0;
+    left: 0;
+}
+
+.changing-word-4::before{
+    background:white;
+    animation: typewriter 2s steps(11) 1s forwards
+}
+.changing-word-4::after{
+    background:black;
+    width: 0.125em;
+    animation: typewriter 2s steps(11) 1s forwards,
+    blink 500ms steps(11) infinite
+}
+
+.changing-word-5{
+    text-decoration: underline;
+    text-decoration-style: dashed;
+    text-decoration-color: black;
+    position: relative;
+    font-family:'Roboto Mono', monospace !important;
+    font-weight: 700 !important;
+}
+
+
+.changing-word-5::before,
+.changing-word-5::after{
+    content: '';
+    position:absolute;
+    top:0;
+    right:0;
+    bottom: 0;
+    left: 0;
+}
+
+.changing-word-5::before{
+    background:white;
+    animation: typewriter 2s steps(9) 1s forwards;
+}
+.changing-word-5::after{
+    background:black;
+    width: 0.125em;
+    animation: typewriter 2s steps(9) 1s forwards,
+    blink 500ms steps(9) infinite
+}
+
+
+
+@keyframes typewriter{
+    to{
+        left: 100%
+    }
+}
+
+@keyframes blink{
+   from{
+       opacity: 0;
+   }
+   to{
+       opacity: 1;
+   }
+}
+
+@keyframes spin{
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}

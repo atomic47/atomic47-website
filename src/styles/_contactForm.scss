@@ -1,0 +1,124 @@
+.contact-form-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    .form-input-container-left{
+        display: none;
+    }
+    .form-input-container-right{
+        display: none;
+    }
+    .form-input-container-full{
+        display: block;
+    }
+    label{
+        font-family: 'Montserrat';
+        font-weight: 700 !important;
+        font-size: 18px;
+        color: $header-text
+    }
+    input[id$="-input"]{
+        border: none;
+        border-bottom: 1px solid black;
+        width: 100%;
+        font-family: 'Montserrat';
+        font-size: 18px;
+        font-weight: 300;
+        ::placeholder{
+            font-family: 'Montserrat';
+            font-size: 18px;
+            font-weight: 300;
+        }
+    }
+
+    textarea{
+        border: none;
+        border-bottom: 1px solid black;
+        width: 100%;
+        margin-bottom: 30px;
+        font-family: 'Montserrat';
+        font-size: 18px;
+        font-weight: 300;
+        ::placeholder{
+            font-family: 'Montserrat';
+            font-size: 18px;
+            font-weight: 300;
+        }
+    }
+}
+
+.submit-group{
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    h2{
+        width: 60%;
+    }
+
+    input[type="submit"]{
+        margin-right:20px;
+        width: 40%;
+    }
+}
+
+
+@media screen and(min-width: 900px){
+
+    .contact-form-container{
+        margin-right: 5%;
+        margin-left: 5%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+    }
+    .contact-form-text{
+        width: 40%;
+        margin-right: 5%;
+        h1{
+            text-align: left !important;
+        }
+        h2{
+            text-align: left !important;
+        }
+    }
+    .contact-form{
+        width: 55%;
+        align-items: flex-start;
+        justify-content: flex-start;
+        text-align: left;
+        .form-input-container-left, .form-input-container-right{
+            display: block;
+        }
+        .form-input-container-left{
+            width: 50%;
+            margin-right: 2.5%;
+        }
+        .form-input-container-right{
+            width: 50%;
+            margin-left: 2.5%;
+        }
+        .form-input-container-full{
+            display: none;
+        }
+        .input-container-outer{
+            display: flex;
+            flex-direction: row;
+        }
+        input[id$="-input"]{
+            height: 70px;
+        }
+        textarea{
+            height: 80px;
+        }
+    }
+    
+}

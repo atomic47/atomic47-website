@@ -1,0 +1,85 @@
+// @import '_header';
+// @import '_section';
+@import "~bootstrap/scss/bootstrap";
+@import "_variables";
+@import "_navbar";
+@import "_fonts";
+@import "_hero";
+@import "_button";
+@import "_textSection";
+@import "_textCarousel";
+@import "_threePartSection";
+@import "_starBackground";
+@import "_brand";
+@import "_contactForm";
+@import "_footer";
+
+.simple-text {
+  margin-bottom: 10%;
+  h1 {
+    text-align: center;
+  }
+  h2 {
+    text-align: center;
+  }
+}
+
+.App {
+  display: grid;
+  row-gap: 2%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Montserrat", monospace !important;
+  font-weight: 900 !important;
+  font-size: 26px;
+  color: $header-text;
+}
+
+h2 {
+  text-align: center;
+  font-family: "Montserrat" !important;
+  font-weight: 300 !important;
+  font-size: 14px;
+  color: black;
+  margin-bottom: 30px;
+  line-height: 1.8;
+}
+
+.header {
+  margin-bottom: 30px;
+}
+
+a:hover{
+  color: $header-text !important;
+}
+
+@media screen and(min-width: 900px) {
+  .simple-text {
+    h1 {
+      text-align: center;
+    }
+    h2 {
+      text-align: center;
+    }
+  }
+
+  h1 {
+    text-align: left;
+    font-family: "Montserrat" !important;
+    font-weight: 900 !important;
+    font-size: 52px;
+    color: $header-text;
+  }
+  h2 {
+    text-align: left;
+    font-family: "Montserrat" !important;
+    font-weight: 300 !important;
+    font-size: 20px;
+    color: black;
+    margin-bottom: 30px;
+  }
+}

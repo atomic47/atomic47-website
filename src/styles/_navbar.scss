@@ -1,0 +1,87 @@
+h1{
+    font-family: "Comfortaa";
+}
+
+a{
+    font-family: "Comfortaa";
+    color: #4DA5A9;
+}
+
+.icons{
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar-nav{
+    display: flex !important;
+}
+.nav-link{
+    margin-right: 0;
+}
+
+.navbar-toggler{
+    border: none !important;
+    margin-left: 0%;
+}
+
+.navbar{
+    background-color: white !important;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    a{
+        font-family: 'Montserrat' !important;
+        font-size: 20px;
+        font-weight: 400;
+        color: black !important;
+    }
+    a:hover{
+        color: $header-text !important;
+    }
+}
+
+.navbar-logo{
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 40px;
+    height: 40px;
+}
+
+
+
+@media screen and (min-width: 968px){
+    .icons{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .navbar{
+        flex-direction: row !important;
+    }
+
+    #basic-navbar-nav{
+        margin-right: 8%;
+    }
+
+    .navbar-logo{
+        margin-top: 20px;
+        margin-left: 100px;
+        width: 80px;
+        height: 80px;
+    }
+}
+
+@media screen and (min-width: 1165px){
+    .nav-link{
+        margin-right: 10px;
+    }
+    
+}
+
+@media screen and (min-width: 1315px){
+    .icons{
+        display: flex;
+        flex-direction: row;
+        margin-left: 40px;
+    }
+}
+

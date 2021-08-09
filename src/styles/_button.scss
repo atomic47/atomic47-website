@@ -1,0 +1,46 @@
+button, .contact-submit-button{
+  background-color: white;
+  color: black;
+  border-radius: 50px;
+  padding: 10px 35px;
+  font-size: large;
+}
+
+.header-button{
+    border: 3px solid $header-text;
+    color: $header-text;
+    font-family: 'Montserrat' !important;
+    font-weight: 700;
+    box-shadow: 5px 5px 0px rgba($header-text, 1);
+    width: 150px;
+}
+
+
+.hero-button{
+  border: 3px solid $bullet-container;
+  font-family: 'Montserrat' !important;
+  font-weight: 700;
+  box-shadow: 5px 5px 0px rgba($bullet-container, 1);
+  width: 300px;
+}
+
+button:hover{
+  background-color: $header-text !important;
+  color: white !important;
+}
+
+.hero-button:hover{
+  background-color: $bullet-container !important;
+}
+
+.contact-submit-button:hover{
+  background-color: $bullet-container !important;
+  color: white !important;
+}
+
+@media screen and(min-width: 900px){
+  .btn{
+    font-size: larger;
+    width: 350px;
+  }
+}
