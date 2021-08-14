@@ -19,7 +19,7 @@ const TextCarousel = (props: any) => {
     "Marketing",
     "Design",
     "Development",
-    "Expertise",
+    "Strategy",
   ];
   const [currentWord, setCurrentWord] = useState('Leadership');
   useEffect(()=>{

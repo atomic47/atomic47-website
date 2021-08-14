@@ -2,7 +2,7 @@ import React from "react";
 
 const ContactForm = (props: any) => {
   return (
-    <div className="contact-form-container">
+    <div className="contact-form-container" id="Contact">
       <div className="simple-text contact-form-text">
         <h1>Share Your Ideas With Us</h1>
         <h2>Still reading? It's time to talk!</h2>

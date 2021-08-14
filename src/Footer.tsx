@@ -5,20 +5,30 @@ import {
   faInstagram,
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
-import {faArrowUp} from "@fortawesome/free-solid-svg-icons"
+import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import a47_logo from "./images/a47-symbolmark.svg"
+import a47_logo from "./images/a47-symbolmark.svg";
 
 const Footer = (props: any) => {
+  function clickHandler(e: any, href?: string) {
+    console.log("scrolling to", href);
+    const hrefValue: any = href;
+    const offsetTop = document.querySelector(hrefValue)?.offsetTop - 150;
+    window.scroll({
+      top: offsetTop,
+      behavior: "smooth",
+    });
+  }
+  let links: string[] = ["Who We Are", "What We Do", "What Were Doing", "Blog", "Contact"];
   return (
     <div className="footer-container">
       <div className="section-1">
-        <div className="back-to-top-mobile">
-          <FontAwesomeIcon className="arrow-icon" icon={faArrowUp}/>
+        <div onClick={(e: any)=>(clickHandler(e, '#Top'))} className="back-to-top-mobile">
+          <FontAwesomeIcon className="arrow-icon" icon={faArrowUp} />
           <h2 className="footer-text">Back to the top</h2>
         </div>
-        <div className="back-to-top-desktop">
-          <img className="a47-logo" src={a47_logo}/>
+        <div onClick={(e: any)=>(clickHandler(e, '#Top'))} className="back-to-top-desktop">
+          <img className="a47-logo" src={a47_logo} />
           <h2>ATOMIC47</h2>
           <h2>LABS</h2>
         </div>
@@ -31,11 +41,15 @@ const Footer = (props: any) => {
       </div>
       <div className="section-2">
         <div className="footer-links">
-          <a>Who We Are</a>
-          <a>What We Do</a>
-          <a>What We're Doing</a>
-          <a>Blog</a>
-          <a>Contact</a>
+          {links.map((link) => (
+            <a
+              onClick={(e: any) =>
+                clickHandler(e, `#${link.replaceAll(" ", "-")}`)
+              }
+            >
+              {link}
+            </a>
+          ))}
         </div>
         <h2 className="footer-text">
           © Atomic 47 Labs <br />

@@ -13,6 +13,7 @@
 @import "_brand";
 @import "_contactForm";
 @import "_footer";
+@import "_blog";
 
 .simple-text {
   margin-bottom: 10%;
@@ -53,7 +54,11 @@ h2 {
   margin-bottom: 30px;
 }
 
-a:hover{
+a:hover {
+  color: $header-text !important;
+}
+
+a:active {
   color: $header-text !important;
 }
 

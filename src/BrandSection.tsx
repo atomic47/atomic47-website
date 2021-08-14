@@ -4,7 +4,7 @@ import LODEGrey from "./images/LODE-Grey.svg"
 
 const BrandSection = (props: any)=>{
     return(
-        <div className ="brand-container">
+        <div className ="brand-container" id="What-Were-Doing">
             <h1>
                 We don't have clients, we have partners we believe in.
             </h1>

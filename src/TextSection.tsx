@@ -6,7 +6,8 @@ const TextSection = ({
   mainText2,
   quoteBody,
   quoteAuthor,
-  subText
+  subText,
+  id
 }: {
   title: string;
   mainText?: string;
@@ -14,9 +15,10 @@ const TextSection = ({
   quoteBody?: string;
   quoteAuthor?: string;
   subText?:string;
+  id?: string;
 }) => {
   return (
-    <div className="text-section">
+    <div id={id} className="text-section">
       <div className="textSection-text">
         <div className="header">
           <h1>{title}</h1>
