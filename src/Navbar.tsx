@@ -46,7 +46,7 @@ const Navigation = (props: any) => {
                 return (
                     <Nav.Link
                       onClick={(e: any) =>{}} 
-                      href="/blog"
+                      href="/atomic47-website/blog"
                     >
                       {link}
                     </Nav.Link>

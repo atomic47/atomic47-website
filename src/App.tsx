@@ -20,7 +20,7 @@ function App() {
         <Navigation />
         <div className="body">
           <Switch>
-            <Route exact path="/">
+            <Route exact path="/atomic47-website">
               <div id="stars" />
               <div id="stars2" />
               <div id="stars3" />
@@ -83,7 +83,7 @@ function App() {
               />
               <BrandSection />
             </Route>
-            <Route path="/blog">
+            <Route path="/atomic47-website/blog">
               <BlogPage blogItems={[{title: "blog item", body: "blog item 1", postDate: "08/12/2021", postImage:"test"}, {title: "blog item", body: "blog item 2", postDate: "08/12/2021", postImage:"test"}, {title: "blog item", body: "blog item 3", postDate: "08/12/2021", postImage:"test"}]}></BlogPage>
             </Route>
           </Switch>
