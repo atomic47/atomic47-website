@@ -1,26 +1,29 @@
 {
   "files": {
-    "main.css": "/atomic47-website/static/css/main.24f0a67d.chunk.css",
-    "main.js": "/atomic47-website/static/js/main.538fdc88.chunk.js",
-    "main.js.map": "/atomic47-website/static/js/main.538fdc88.chunk.js.map",
+    "main.css": "/atomic47-website/static/css/main.3189eb09.chunk.css",
+    "main.js": "/atomic47-website/static/js/main.d68d9536.chunk.js",
+    "main.js.map": "/atomic47-website/static/js/main.d68d9536.chunk.js.map",
     "runtime-main.js": "/atomic47-website/static/js/runtime-main.8ce0c4c4.js",
     "runtime-main.js.map": "/atomic47-website/static/js/runtime-main.8ce0c4c4.js.map",
-    "static/js/2.f069a9df.chunk.js": "/atomic47-website/static/js/2.f069a9df.chunk.js",
-    "static/js/2.f069a9df.chunk.js.map": "/atomic47-website/static/js/2.f069a9df.chunk.js.map",
+    "static/js/2.7a03bc0e.chunk.js": "/atomic47-website/static/js/2.7a03bc0e.chunk.js",
+    "static/js/2.7a03bc0e.chunk.js.map": "/atomic47-website/static/js/2.7a03bc0e.chunk.js.map",
     "static/js/3.af6362ef.chunk.js": "/atomic47-website/static/js/3.af6362ef.chunk.js",
     "static/js/3.af6362ef.chunk.js.map": "/atomic47-website/static/js/3.af6362ef.chunk.js.map",
     "index.html": "/atomic47-website/index.html",
-    "static/css/main.24f0a67d.chunk.css.map": "/atomic47-website/static/css/main.24f0a67d.chunk.css.map",
-    "static/js/2.f069a9df.chunk.js.LICENSE.txt": "/atomic47-website/static/js/2.f069a9df.chunk.js.LICENSE.txt",
+    "static/css/main.3189eb09.chunk.css.map": "/atomic47-website/static/css/main.3189eb09.chunk.css.map",
+    "static/js/2.7a03bc0e.chunk.js.LICENSE.txt": "/atomic47-website/static/js/2.7a03bc0e.chunk.js.LICENSE.txt",
     "static/media/LODE-Grey.18eff5a8.svg": "/atomic47-website/static/media/LODE-Grey.18eff5a8.svg",
     "static/media/Village-Grey.5a774c16.svg": "/atomic47-website/static/media/Village-Grey.5a774c16.svg",
     "static/media/a47-symbolmark.653f973a.svg": "/atomic47-website/static/media/a47-symbolmark.653f973a.svg",
-    "static/media/hero_satellite.b711457c.svg": "/atomic47-website/static/media/hero_satellite.b711457c.svg"
+    "static/media/hero_satellite.b711457c.svg": "/atomic47-website/static/media/hero_satellite.b711457c.svg",
+    "static/media/magnifier.8d31e1ff.gif": "/atomic47-website/static/media/magnifier.8d31e1ff.gif",
+    "static/media/rocket-launch.2042f833.gif": "/atomic47-website/static/media/rocket-launch.2042f833.gif",
+    "static/media/tools.66370b24.gif": "/atomic47-website/static/media/tools.66370b24.gif"
   },
   "entrypoints": [
     "static/js/runtime-main.8ce0c4c4.js",
-    "static/js/2.f069a9df.chunk.js",
-    "static/css/main.24f0a67d.chunk.css",
-    "static/js/main.538fdc88.chunk.js"
+    "static/js/2.7a03bc0e.chunk.js",
+    "static/css/main.3189eb09.chunk.css",
+    "static/js/main.d68d9536.chunk.js"
   ]
 }
