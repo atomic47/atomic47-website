@@ -26,22 +26,26 @@ const TextCarousel = (props: any) => {
     setCurrentWord(carouselWords[(carouselWords.indexOf(currentWord)===carouselWords.length-1)?0:carouselWords.indexOf(currentWord)]);
   }, [])
 
-  setTimeout(()=>{
-    let component = document.getElementById('typed-word-component')
-    if(component){
-      component.classList.remove(`changing-word-${carouselWords.indexOf(currentWord) + 1}`);
-  
-      // -> triggering reflow /* The actual magic */
-      // without this it wouldn't work. Try uncommenting the line and the transition won't be retriggered.
-      // Oops! This won't work in strict mode. Thanks Felis Phasma!
-      // element.offsetWidth = element.offsetWidth;
-      // Do this instead:
-      void component.offsetWidth;
-      
-      // -> and re-adding the class
-      component.classList.add(`changing-word-${carouselWords.indexOf(currentWord) + 1}`);
-    }
-  }, 0)
+
+  useEffect(()=>{
+    setTimeout(()=>{
+      let component = document.getElementById('typed-word-component')
+      if(component){
+        component.classList.remove(`changing-word-${carouselWords.indexOf(currentWord) + 1}`);
+    
+        // -> triggering reflow /* The actual magic */
+        // without this it wouldn't work. Try uncommenting the line and the transition won't be retriggered.
+        // Oops! This won't work in strict mode. Thanks Felis Phasma!
+        // element.offsetWidth = element.offsetWidth;
+        // Do this instead:
+        void component.offsetWidth;
+        
+        // -> and re-adding the class
+        component.classList.add(`changing-word-${carouselWords.indexOf(currentWord) + 1}`);
+      }
+    }, 0)
+  },[currentWord])
+
 
 
   setTimeout(() => {

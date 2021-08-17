@@ -11,6 +11,8 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 .hero-body {
@@ -55,12 +57,21 @@
       align-self: flex-start;
   }
 
+  .hero-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 5%;
+    margin-right: 0px;
+  }
+
   .hero-image {
     display: block;
     width: 500px;
     height: 500px;
     animation: float infinite 2s linear;
     animation-direction: alternate;
+    margin-right: 5%;
   }
 
   @keyframes float{
