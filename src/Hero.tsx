@@ -3,6 +3,15 @@ import { Button } from "react-bootstrap";
 import hero_satellite from "./images/hero_satellite.svg";
 
 const Hero = (props: any) => {
+  function clickHandler(e: any, href?: string) {
+    console.log("scrolling to", href);
+    const hrefValue: any = href;
+    const offsetTop = document.querySelector(hrefValue)?.offsetTop - 150;
+    window.scroll({
+      top: offsetTop,
+      behavior: "smooth",
+    });
+  }
   return (
     <div className="hero-section">
       <div id="stars"></div>
@@ -23,7 +32,7 @@ const Hero = (props: any) => {
           </h2>
         </div>
         <div className="hero-button-section">
-          <button className="hero-button" style={{ width: "100%" }}>
+          <button className="hero-button" style={{ width: "100%" }} onClick={(e: any) => clickHandler(e, "#Contact")}>
             Ready to Skyrocket?
           </button>
         </div>

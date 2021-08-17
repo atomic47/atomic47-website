@@ -28,7 +28,7 @@ const Footer = (props: any) => {
           <h2 className="footer-text">Back to the top</h2>
         </div>
         <div onClick={(e: any)=>(clickHandler(e, '#Top'))} className="back-to-top-desktop">
-          <img className="a47-logo" src={a47_logo} />
+          <img className="a47-logo" src={a47_logo} alt="Atomic47"/>
           <h2>ATOMIC47</h2>
           <h2>LABS</h2>
         </div>

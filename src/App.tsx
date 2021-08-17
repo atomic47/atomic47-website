@@ -22,6 +22,34 @@ function App() {
   setTimeout(() => {
     setShowLoading(false);
   }, 2000);
+
+  let whoWeAreLink = document.getElementById("Who-We-Are-link");
+  let whatWeDoLink = document.getElementById("What-We-Do-link");
+  let whatWereDoingLink = document.getElementById("What-Were-Doing-link");
+
+  if (!window.location.href.includes("blog")) {
+    window.addEventListener("scroll", function () {
+      let scrollpos = window.scrollY;
+
+      if (scrollpos > 1026 && scrollpos < 2166) {
+        let activeLinks = document.getElementsByClassName("active");
+        Array.from(activeLinks).forEach((el) => el.classList.remove("active"));
+        whoWeAreLink?.classList.add("active");
+      } else if (scrollpos > 1500 && scrollpos < 5130) {
+        let activeLinks = document.getElementsByClassName("active");
+        Array.from(activeLinks).forEach((el) => el.classList.remove("active"));
+        whatWeDoLink?.classList.add("active");
+      } else if (scrollpos > 5130 && scrollpos < 6706) {
+        let activeLinks = document.getElementsByClassName("active");
+        Array.from(activeLinks).forEach((el) => el.classList.remove("active"));
+        whatWereDoingLink?.classList.add("active");
+      } else {
+        let activeLinks = document.getElementsByClassName("active");
+        Array.from(activeLinks).forEach((el) => el.classList.remove("active"));
+      }
+    });
+  }
+
   return (
     <Router>
       <div className="App">
@@ -118,6 +146,54 @@ function App() {
                 {
                   title: "blog item",
                   body: "blog item 2",
+                  postDate: "08/12/2021",
+                  postImage: "test",
+                },
+                {
+                  title: "blog item",
+                  body: "blog item 3",
+                  postDate: "08/12/2021",
+                  postImage: "test",
+                },
+                {
+                  title: "blog item",
+                  body: "blog item 3",
+                  postDate: "08/12/2021",
+                  postImage: "test",
+                },
+                {
+                  title: "blog item",
+                  body: "blog item 3",
+                  postDate: "08/12/2021",
+                  postImage: "test",
+                },
+                {
+                  title: "blog item",
+                  body: "blog item 3",
+                  postDate: "08/12/2021",
+                  postImage: "test",
+                },
+                {
+                  title: "blog item",
+                  body: "blog item 3",
+                  postDate: "08/12/2021",
+                  postImage: "test",
+                },
+                {
+                  title: "blog item",
+                  body: "blog item 3",
+                  postDate: "08/12/2021",
+                  postImage: "test",
+                },
+                {
+                  title: "blog item",
+                  body: "blog item 3",
+                  postDate: "08/12/2021",
+                  postImage: "test",
+                },
+                {
+                  title: "blog item",
+                  body: "blog item 3",
                   postDate: "08/12/2021",
                   postImage: "test",
                 },

@@ -17,6 +17,9 @@ a{
 
 .navbar-nav{
     display: flex !important;
+    .active{
+        color: $header-text !important;
+    }
 }
 .nav-link{
     margin-right: 0;
