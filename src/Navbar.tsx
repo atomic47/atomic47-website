@@ -14,7 +14,7 @@ const Navigation = (props: any) => {
   function clickHandler(e: any, href?: string) {
     const hrefValue: any = href;
     const offsetTop = document.querySelector(hrefValue)?.offsetTop - 150;
-    e.target.classList.add('active')
+    e.target.classList.add("active");
     window.scroll({
       top: offsetTop,
       behavior: "smooth",
@@ -26,7 +26,7 @@ const Navigation = (props: any) => {
     <div className="navbar-container">
       <Navbar expand="lg" bg="light" fixed="top">
         <Navbar.Brand onClick={(e: any) => clickHandler(e, "#Top")}>
-          <img src={a47_logo} className="navbar-logo" alt='Atomic47 Logo'></img>
+          <img src={a47_logo} className="navbar-logo" alt="Atomic47 Logo"></img>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse className="justify-content-end" id="basic-navbar-nav">
@@ -38,7 +38,11 @@ const Navigation = (props: any) => {
                     onClick={(e: any) =>
                       clickHandler(e, `#${link.replaceAll(" ", "-")}`)
                     }
-                    href={`/atomic47-website#${link.replaceAll(" ", "-")}`}
+                    href={
+                      window.location.href.includes("blog")
+                        ? `/atomic47-website#${link.replaceAll(" ", "-")}`
+                        : ""
+                    }
                     id={`${link.replaceAll(" ", "-")}-link`}
                   >
                     {link}
@@ -46,13 +50,13 @@ const Navigation = (props: any) => {
                 );
               } else {
                 return (
-                    <Nav.Link
-                      onClick={(e: any) =>{}} 
-                      href="/atomic47-website/blog"
-                      id= "blog-link"
-                    >
-                      {link}
-                    </Nav.Link>
+                  <Nav.Link
+                    onClick={(e: any) => {}}
+                    href="/atomic47-website/blog"
+                    id="blog-link"
+                  >
+                    {link}
+                  </Nav.Link>
                 );
               }
             })}
