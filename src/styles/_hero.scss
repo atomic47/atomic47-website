@@ -67,30 +67,30 @@
 
   .hero-image {
     display: block;
-    width: 500px;
-    height: 500px;
+    width: 400px;
+    height: auto;
     animation: float infinite 2s linear;
     animation-direction: alternate;
     margin-right: 5%;
-  }
-
-  @keyframes float{
-    from{
-      transform: translateY(-20px);
-    }
-    to{
-      transform: translateY(20px);
-    }
   }
 }
 
 @media screen and(min-width: 1150px) {
   .hero-image {
     display: block;
-    width: 800px;
-    height: 800px;
+    width: 600px;
+    height: auto;
     animation: float infinite 2s linear;
     animation-direction: alternate;
+  }
+}
+
+@keyframes float{
+  from{
+    transform: translateY(-20px);
+  }
+  to{
+    transform: translateY(20px);
   }
 }
 

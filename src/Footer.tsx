@@ -8,6 +8,14 @@ import {
 import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import a47_logo from "./images/a47-symbolmark.svg";
+import {
+  Navbar,
+  Nav,
+  NavDropdown,
+  FormControl,
+  Button,
+  Form,
+} from "react-bootstrap";
 
 const Footer = (props: any) => {
   function clickHandler(e: any, href?: string) {
@@ -42,13 +50,18 @@ const Footer = (props: any) => {
       <div className="section-2">
         <div className="footer-links">
           {links.map((link) => (
-            <a
+            <Nav.Link
               onClick={(e: any) =>
                 clickHandler(e, `#${link.replaceAll(" ", "-")}`)
               }
+              href={
+                window.location.href.includes("blog")
+                  ? `/atomic47-website#${link.replaceAll(" ", "-")}`
+                  : ""
+              }
             >
               {link}
-            </a>
+            </Nav.Link>
           ))}
         </div>
         <h2 className="footer-text">
