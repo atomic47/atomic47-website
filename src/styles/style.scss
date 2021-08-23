@@ -54,15 +54,17 @@ h2 {
   margin-bottom: 30px;
 }
 
-a:hover {
-  color: $header-text !important;
-}
-
-a:active {
-  color: $header-text !important;
-}
 
 @media screen and(min-width: 900px) {
+
+  a:hover {
+    color: $header-text !important;
+  }
+  
+  a:active {
+    color: $header-text !important;
+  }
+
   .simple-text {
     h1 {
       text-align: center;

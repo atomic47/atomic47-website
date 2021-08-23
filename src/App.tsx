@@ -31,7 +31,7 @@ function App() {
     window.addEventListener("scroll", function () {
       let scrollpos = window.scrollY;
 
-      if (scrollpos > 1026 && scrollpos < 2166) {
+      if (scrollpos > 850 && scrollpos < 1500) {
         let activeLinks = document.getElementsByClassName("active");
         Array.from(activeLinks).forEach((el) => el.classList.remove("active"));
         whoWeAreLink?.classList.add("active");

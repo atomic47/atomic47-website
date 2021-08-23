@@ -40,12 +40,7 @@ a{
         font-weight: 400;
         color: black !important;
     }
-    a:hover{
-        color: $header-text !important;
-    }
-    a:active{
-        color: $header-text !important;
-    }
+    
 }
 
 .navbar-logo{
@@ -65,6 +60,12 @@ a{
 
     .navbar{
         flex-direction: row !important;
+        a:hover{
+            color: $header-text !important;
+        }
+        a:active{
+            color: $header-text !important;
+        }
     }
 
     #basic-navbar-nav{
