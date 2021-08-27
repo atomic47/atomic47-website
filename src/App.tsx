@@ -55,7 +55,7 @@ function App() {
       <div className="App">
         <Navigation />
         <Switch>
-          <Route exact path="/atomic47-website">
+          <Route exact path="/">
             <Hero />
             <TextSection
               title="Who We Are"
@@ -134,77 +134,17 @@ function App() {
             />
             <BrandSection />
           </Route>
-          <Route path="/atomic47-website/blog">
-            <BlogPage
+          <Route path="/blog">
+            {/* <BlogPage
               blogItems={[
-                {
-                  title: "blog item",
-                  body: "blog item 1",
-                  postDate: "08/12/2021",
-                  postImage: "test",
-                },
-                {
-                  title: "blog item",
-                  body: "blog item 2",
-                  postDate: "08/12/2021",
-                  postImage: "test",
-                },
-                {
-                  title: "blog item",
-                  body: "blog item 3",
-                  postDate: "08/12/2021",
-                  postImage: "test",
-                },
-                {
-                  title: "blog item",
-                  body: "blog item 3",
-                  postDate: "08/12/2021",
-                  postImage: "test",
-                },
-                {
-                  title: "blog item",
-                  body: "blog item 3",
-                  postDate: "08/12/2021",
-                  postImage: "test",
-                },
-                {
-                  title: "blog item",
-                  body: "blog item 3",
-                  postDate: "08/12/2021",
-                  postImage: "test",
-                },
-                {
-                  title: "blog item",
-                  body: "blog item 3",
-                  postDate: "08/12/2021",
-                  postImage: "test",
-                },
-                {
-                  title: "blog item",
-                  body: "blog item 3",
-                  postDate: "08/12/2021",
-                  postImage: "test",
-                },
-                {
-                  title: "blog item",
-                  body: "blog item 3",
-                  postDate: "08/12/2021",
-                  postImage: "test",
-                },
-                {
-                  title: "blog item",
-                  body: "blog item 3",
-                  postDate: "08/12/2021",
-                  postImage: "test",
-                },
-                {
-                  title: "blog item",
-                  body: "blog item 3",
-                  postDate: "08/12/2021",
-                  postImage: "test",
-                },
+                
               ]}
-            ></BlogPage>
+            ></BlogPage> */}
+            <div className="under-construction">
+              <img src={tools}></img>
+              <h1>This Page is Currently Under Construction</h1>
+              <a href="/"><h2>Back to Home</h2></a>
+            </div>
           </Route>
         </Switch>
         <ContactForm />

@@ -31,9 +31,9 @@ a{
 }
 
 .navbar{
-    background-color: white !important;
     flex-direction: row !important;
     justify-content: space-between !important;
+    background-color: white !important;
     a{
         font-family: 'Montserrat' !important;
         font-size: 20px;
@@ -43,11 +43,17 @@ a{
     
 }
 
+
 .navbar-logo{
     margin-top: 20px;
     margin-left: 20px;
     width: 40px;
     height: 40px;
+}
+
+.navbar-collapse{
+    display: block;
+    position: relative;
 }
 
 

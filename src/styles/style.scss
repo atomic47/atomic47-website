@@ -15,6 +15,17 @@
 @import "_footer";
 @import "_blog";
 
+.under-construction{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 15%;
+  a{
+    font: "Montserrat";
+  }
+}
+
 .simple-text {
   margin-bottom: 10%;
   margin-left: 5%;

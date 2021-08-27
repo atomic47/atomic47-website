@@ -40,7 +40,7 @@ const Navigation = (props: any) => {
                     }
                     href={
                       window.location.href.includes("blog")
-                        ? `/atomic47-website#${link.replaceAll(" ", "-")}`
+                        ? `/#${link.replaceAll(" ", "-")}`
                         : ""
                     }
                     id={`${link.replaceAll(" ", "-")}-link`}
@@ -52,7 +52,7 @@ const Navigation = (props: any) => {
                 return (
                   <Nav.Link
                     onClick={(e: any) => {}}
-                    href="/atomic47-website/blog"
+                    href="/blog"
                     id="blog-link"
                   >
                     {link}

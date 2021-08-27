@@ -18,8 +18,8 @@ const BrandSection = (props: any)=>{
                 We don't have clients, we have partners we believe in.
             </h1>
             <div className='logos'>
-                <img src={VillageGrey} alt="village logo"/>
-                <img src={LODEGrey} alt = "LODE logo"/>
+                <a href="https://thevillageapp.co/"><img src={VillageGrey} alt="village logo"/></a>
+                <a href="https://lode.one/"><img src={LODEGrey} alt = "LODE logo"/></a>
             </div>
             <button className="hero-button" onClick={e=>(clickHandler(e, "#Contact"))}>Partner With Us</button>
         </div>

@@ -57,6 +57,14 @@
     }
 }
 
+.one-line{
+    display: block;
+}
+
+.two-line{
+    display: none;
+}
+
 .submit-group{
     display: flex;
     flex-direction: row;
@@ -121,6 +129,14 @@
         textarea{
             height: 80px;
         }
+    }
+
+    .one-line{
+        display: none;
+    }
+
+    .two-line{
+        display: block;
     }
     
 }

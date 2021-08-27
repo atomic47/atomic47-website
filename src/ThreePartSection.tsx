@@ -14,13 +14,13 @@ const ThreePartSection = (props: any) => {
       </div>
       <div className="bullet-container">
         <h1>Expertise</h1>
-        <div className="text-bullets">
+          <ul className="text-bullets">
             {props.bulletPoints?.map((bullet: string) => {
               return (
-                  <h2>• {bullet}</h2>
+                <li>{bullet}</li>
               );
             })}
-        </div>
+          </ul>
       </div>
     </div>
   );

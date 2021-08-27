@@ -41,10 +41,10 @@ const Footer = (props: any) => {
           <h2>LABS</h2>
         </div>
         <div className="socials">
-          <FontAwesomeIcon icon={faFacebook} />
-          <FontAwesomeIcon icon={faTwitter} />
-          <FontAwesomeIcon icon={faInstagram} />
-          <FontAwesomeIcon icon={faLinkedin} />
+          <a href='https://www.facebook.com/atomic47labs/'><FontAwesomeIcon icon={faFacebook} /></a>
+          <a href="https://twitter.com/atomic47_labs"><FontAwesomeIcon icon={faTwitter} /></a>
+          <a href="https://www.instagram.com/atomic47labs/"><FontAwesomeIcon icon={faInstagram} /></a>
+          <a href="https://www.linkedin.com/company/atomic47labs/"><FontAwesomeIcon icon={faLinkedin} /></a>
         </div>
       </div>
       <div className="section-2">
