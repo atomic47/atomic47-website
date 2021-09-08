@@ -13,16 +13,18 @@
 }
 
 .logos{
+    width: 100%;
     margin-top: 10%;
     margin-bottom: 10%;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     flex-direction: row;
-    >img{
-       margin: 15%;
-       width: 100px;
-       height: 100px;  
+    a{
+        img{
+            margin: 15%;
+            width: 100px;
+            }
     }
 }
 
@@ -41,15 +43,14 @@
         }
     }
     .logos{
-        :first-child{
-            margin-right: 30%;
-        }
-        :last-child{
-            margin-left: 30%;
-        }
-        >img{
-            width: 226px;
-            height: 248px;
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;
+        a{
+            img{
+                width: 226px;
+                height: 248px;
+                }
         }
     }
 
