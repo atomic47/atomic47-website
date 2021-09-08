@@ -14,11 +14,13 @@ const Navigation = (props: any) => {
   function clickHandler(e: any, href?: string) {
     const hrefValue: any = href;
     const offsetTop = document.querySelector(hrefValue)?.offsetTop - 150;
-    e.target.classList.add("active");
     window.scroll({
       top: offsetTop,
       behavior: "smooth",
-    });
+    })
+    setTimeout(()=>{
+      e.target.classList.add("active");
+    }, 800)
   }
 
   let links: string[] = ["Who We Are", "What We Do", "What Were Doing", "Blog"];
