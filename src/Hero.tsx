@@ -19,7 +19,7 @@ const Hero = (props: any) => {
       <div id="stars3"></div>
       <div className="hero-text">
         <div className="header">
-          <h1>Scaling Your Buisiness Starts Here</h1>
+          <h1>Scaling Your Business Starts Here</h1>
         </div>
         <div className="hero-body">
           <h2>
