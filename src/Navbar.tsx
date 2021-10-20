@@ -23,7 +23,7 @@ const Navigation = (props: any) => {
     }, 800)
   }
 
-  let links: string[] = ["Who We Are", "What We Do", "What Were Doing", "Blog"];
+  let links: string[] = ["Who We Are", "What We Do", "What We're Doing", "Blog"];
   return (
     <div className="navbar-container">
       <Navbar expand="lg" bg="light" fixed="top">
@@ -35,17 +35,21 @@ const Navigation = (props: any) => {
           <Nav>
             {links.map((link) => {
               if (link !== "Blog") {
+                console.log('link', link);
+                let formattedLink = link.replace(/\s+/g, '-');
+                formattedLink = formattedLink.replace(/\'/g, '');
                 return (
                   <Nav.Link
-                    onClick={(e: any) =>
-                      clickHandler(e, `#${link.replaceAll(" ", "-")}`)
+                    onClick={(e: any) =>{
+                        clickHandler(e, `#${formattedLink}`)
+                      }
                     }
                     href={
                       window.location.href.includes("blog")
-                        ? `/#${link.replaceAll(" ", "-")}`
-                        : ""
+                  ? `/#${formattedLink}`
+                  : `#${formattedLink}`
                     }
-                    id={`${link.replaceAll(" ", "-")}-link`}
+                    id={`${formattedLink}-link`}
                   >
                     {link}
                   </Nav.Link>

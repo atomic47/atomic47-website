@@ -27,7 +27,7 @@ const Footer = (props: any) => {
       behavior: "smooth",
     });
   }
-  let links: string[] = ["Who We Are", "What We Do", "What Were Doing", "Blog", "Contact"];
+  let links: string[] = ["Who We Are", "What We Do", "What We're Doing", "Blog", "Contact"];
   return (
     <div className="footer-container">
       <div className="section-1">
@@ -49,20 +49,27 @@ const Footer = (props: any) => {
       </div>
       <div className="section-2">
         <div className="footer-links">
-          {links.map((link) => (
+          {links.map((link) => {
+            let formattedLink = link.replace(/\s+/g, '-');
+            formattedLink = formattedLink.replace(/\'/g, '');
+            return (
             <Nav.Link
               onClick={(e: any) =>
-                clickHandler(e, `#${link.replaceAll(" ", "-")}`)
+                {
+                  console.log('formattedLink click', formattedLink)
+                  clickHandler(e, `#${formattedLink}`)
+                }
               }
               href={
                 window.location.href.includes("blog")
-                  ? `/atomic47-website#${link.replaceAll(" ", "-")}`
-                  : ""
+                  ? `/#${formattedLink}`
+                  : `#${formattedLink}`
               }
             >
               {link}
             </Nav.Link>
-          ))}
+          )}
+          )}
         </div>
         <h2 className="footer-text">
           © Atomic 47 Labs <br />
